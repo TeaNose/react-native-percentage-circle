@@ -153,7 +153,7 @@ class PercentageCircle extends Component {
         <View style={[styles.innerCircle,{
               width:(this.props.radius - this.state.borderWidth)*2,
               height:(this.props.radius - this.state.borderWidth)*2,
-              borderRadius:this.props.radius - this.state.borderWidth,
+              borderRadius:25,
               backgroundColor: this.props.innerColor,
             }]}>
           {this.props.children ? this.props.children :
@@ -166,6 +166,7 @@ class PercentageCircle extends Component {
 }
 
 // set some attributes default value
+// this.props.radius - this.state.borderWidth
 PercentageCircle.defaultProps = {
   bgcolor: '#e3e3e3',
   innerColor: '#fff'
