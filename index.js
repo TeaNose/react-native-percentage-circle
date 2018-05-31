@@ -144,8 +144,8 @@ class PercentageCircle extends Component {
             left:-this.props.radius,
             width:this.props.radius,
             height: this.props.radius*2,
-            borderTopRightRadius:10,
-            borderBottomRightRadius:10,
+            borderTopRightRadius:0,
+            borderBottomRightRadius:0,
             backgroundColor: this.props.color,
             transform:[{translateX:this.props.radius/2},{rotate:this.state.rightTransformerDegree},{translateX:-this.props.radius/2}],
           }]}></View>
